@@ -1,0 +1,71 @@
+{
+  "name": "ts-node-prettier-vscode-starter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.js.map",
+    "dist/**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prerelease": "yarn build",
+    "release": "standard-version",
+    "test": "jest",
+    "lint-ts": "eslint --ext .ts ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PDMLab/ts-node-prettier-vscode-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PDMLab/ts-node-prettier-vscode-starter/issues"
+  },
+  "homepage": "https://github.com/PDMLab/ts-node-prettier-vscode-starter#readme",
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@types/jest": "^25.1.1",
+    "@types/node": "^10.17.5",
+    "@typescript-eslint/eslint-plugin": "2.18.0",
+    "@typescript-eslint/parser": "2.18.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "prettier": "1.19.1",
+    "should": "^13.2.3",
+    "standard-version": "7.1.0",
+    "ts-jest": "^25.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "jest": {
+    "testRegex": "test/.+[Tt]ests?\\.tsx?$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
+}
