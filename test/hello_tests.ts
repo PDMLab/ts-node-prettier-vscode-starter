@@ -1,9 +1,9 @@
-import * as should from 'should'
+import 'should'
 import { hello } from '../src/index'
 require('should')
 
 describe('hello', () => {
-  it('should say name', done => {
+  it('should say name', (done) => {
     const sut = hello('alex')
     sut.should.equal('hello, alex')
     done()
