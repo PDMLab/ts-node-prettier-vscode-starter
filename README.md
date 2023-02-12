@@ -1,4 +1,6 @@
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) [![Join the chat at https://gitter.im/pdmlab/community](https://badges.gitter.im/pdmlab/community.svg)](https://gitter.im/pdmlab/community)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org) 
+[![Discord](https://img.shields.io/discord/1070453198000767076)](https://discord.gg/dKWyyv6M)
+<img src="https://img.shields.io/github/actions/workflow/status/pdmlab/ts-node-prettier-vscode-starter/ci.yml?branch=main" />
 
 # ts-node-prettier-vscode-starter
 
